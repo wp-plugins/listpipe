@@ -3,7 +3,7 @@
 Plugin Name: ListPipe Content Generator
 Plugin URI: http://www.listpipe.com/plugins.php
 Description: The ListPipe Pugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
-Version: 2.1
+Version: 2.2
 Author: Square Compass, LLC
 Author URI: http://www.squarecompass.com
 */
@@ -11,6 +11,7 @@ Author URI: http://www.squarecompass.com
 add_action('get_header','listpipe_get_content'); 
 //Functions
 function listpipe_get_content() {
+	global $wpdb;
 	switch(@$_REQUEST['action']) {
 		case 'GetDraft':
 			// Make sure the Draft Key, Approval Key and BlogPostingID are set.
@@ -60,13 +61,19 @@ function listpipe_get_content() {
 							"param"=>array("name"=>array(),"value"=>array())
 						)
 					);
+					//Get this Blogs Admin User
+					$admin_user_id = $wpdb->get_var($wpdb->prepare("SELECT id FROM $wpdb->users WHERE user_email=%s;",get_option("admin_email")));
 					// Save Post
+					$publish_timestamp = strtotime("+ ".rand(0,3000)." seconds");
 					$postID = wp_insert_post(array(
+						"post_author"=>$admin_user_id,
 						"post_status"=>($is_draft?"draft":"publish"),
 						"post_type"=>"post",
 						"post_title"=>$contents[0],
 						"post_content"=>$contents[1],
-						"post_category"=>array($cat_id)
+						"post_category"=>array($cat_id),
+						"post_date"=>date("Y-m-d H:i:s",$publish_timestamp),
+						"post_date_gmt"=>gmdate("Y-m-d H:i:s",$publish_timestamp)
 					));
 					if(empty($postID))
 						die("Unable to insert content.");
