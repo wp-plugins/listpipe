@@ -6,7 +6,7 @@ Requires at least: 2.8.4
 Tested up to: 2.8.5
 Stable tag: Trunk
 
-The ListPipe Pugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
+The ListPipe Plugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
 
 == Description ==
 
@@ -37,9 +37,7 @@ To install the ListPipe Plugin for WordPress, we suggest installing within your 
 6. Confirm that the plugin is active;
 7. You are now ready to start your ListPipe account.
 
-Note: you must INSTALL and ACTIVATE (installing the plugin without activating it is not sufficient) the ListPipe plugin for WordPress to receive content from ListPipe.
-
-Note: you should INSTALL and ACTIVATE the ListPipe plugin for WordPress before you create your ListPipe account.
+Note: You must INSTALL and ACTIVATE the ListPipe plugin for WordPress before you create your ListPipe account in order to receive content. Installing the plugin without activating it is not sufficient, and will result in a failure.
 
 Note: we always suggest that you use the most up-to-date version of WordPress with the ListPipe plugin for WordPress and that you back up your database before installation.
 
@@ -61,6 +59,6 @@ Refer to http://listpipe.com/plugin.php for more help
 
 Go to http://register.ListPipe.com to sign up for an account.
 
-== Thank You Wordpress ==
+== Thank You WordPress ==
 
 We are thrilled to present this plugin for Wordpress
