@@ -10,9 +10,7 @@ The ListPipe Pugin for WordPress pulls Powerful Custom Content from your ListPip
 
 == Description ==
 
-ListPipe is a blog service that provides Powerful Custom Content written just for you. We use the ListPipe Content Generator to deliver your subscription content into your blog. The plugin we discuss on this page provides a secure, account-specific handshake with our content service and allows us to deliver your content directly to your blog.
-
-Install and activate the ListPipe Content Generator before you create your ListPipe account. If you do not intend to start a ListPipe account, then this plugin will be of no use to you. 
+ListPipe is a blog service that provides Powerful Custom Content written just for you. We use the ListPipe Content Generator to deliver your subscription content into your blog. The plugin we discuss on this page provides a secure, account-specific handshake with our content service and allows us to deliver your content directly to your blog. Please note that you must INSTALL and ACTIVATE (installing the plugin without activating it is not sufficient) the ListPipe plugin for WordPress to receive content from ListPipe (you should INSTALL and ACTIVATE the ListPipe plugin for WordPress before you create your ListPipe account). If you do not intend to start a ListPipe account, then this plugin will be of no use to you. 
 
 == Installation ==
 
@@ -20,7 +18,7 @@ These installation instructions for the ListPipe plugin assume that you are alre
 
 To install the ListPipe Plugin for WordPress, we suggest installing within your WordPress blog (using the native plugin installation system; assuming your server is set up for that) or via FTP:
 
-=Installing from within Your Wordpress Blog=
+=Installing from within Your WordPress Blog=
 1. Log into your blog and open the Plugins panel on the left-side navigation;
 2. Click the 'Add New' option under the Plugins header;
 3. Search for 'ListPipe Content Generator' in the search window;
@@ -31,13 +29,17 @@ To install the ListPipe Plugin for WordPress, we suggest installing within your 
 8. You are now ready to start your ListPipe account.
 
 =Installing Via FTP=
-1. Download the ListPipe plugin from ListPipe or from Wordpress;
+1. Download the ListPipe plugin from ListPipe or from WordPress;
 2. Unpack the .ZIP files to your desktop;
 3. Upload the file titled 'listpipe.php' to your Plugins folder (typically located at /wp-content/plugins/);
 4. Log into your blog and open the Plugins panel on the left-side navigation;
 5. Locate the ListPipe Content Generator plugging and activate it by clicking the 'Activate' link below the title;
 6. Confirm that the plugin is active;
 7. You are now ready to start your ListPipe account.
+
+Note: you must INSTALL and ACTIVATE (installing the plugin without activating it is not sufficient) the ListPipe plugin for WordPress to receive content from ListPipe.
+
+Note: you should INSTALL and ACTIVATE the ListPipe plugin for WordPress before you create your ListPipe account.
 
 Note: we always suggest that you use the most up-to-date version of WordPress with the ListPipe plugin for WordPress and that you back up your database before installation.
 
