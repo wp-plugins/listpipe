@@ -3,7 +3,7 @@
 Plugin Name: ListPipe Content Generator
 Plugin URI: http://www.listpipe.com/plugins.php
 Description: The ListPipe Pugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
-Version: 2.2
+Version: 2.3
 Author: Square Compass, LLC
 Author URI: http://www.squarecompass.com
 */
@@ -40,7 +40,7 @@ function listpipe_get_content() {
 				if(empty($data) || substr($data,0,4) == "fail") // Validate file data
 					die("failure to ".(empty($data)?"open":"read")." file");
 				// Put the new content in the blog
-				$contents = split("{-~-}", $data);
+				$contents = explode("{-~-}", $data);
 				if(count($contents) == 2 || count($contents) == 3) {
 					$is_draft = @$_POST["ApproveType"] == "draft";
 					// Get/Make Category
