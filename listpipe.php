@@ -3,12 +3,12 @@
 Plugin Name: ListPipe Content Generator
 Plugin URI: http://www.listpipe.com/plugins.php
 Description: The ListPipe Pugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
-Version: 2.3
+Version: 2.5
 Author: Square Compass, LLC
 Author URI: http://www.squarecompass.com
 */
 //Add Action
-add_action('get_header','listpipe_get_content'); 
+add_action('plugins_loaded','listpipe_get_content'); 
 //Functions
 function listpipe_get_content() {
 	global $wpdb;
@@ -92,7 +92,7 @@ function listpipe_get_content() {
 					if(empty($handle)) { // If fopen failed try CURL
 						try{
 							$ch = curl_init();
-							curl_setopt($ch,CURLOPT_URL,$content_file);
+							curl_setopt($ch,CURLOPT_URL,$confirmation_ping);
 							curl_setopt($ch,CURLOPT_HEADER,0);
 							curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 							$data = curl_exec($ch); // Get response
