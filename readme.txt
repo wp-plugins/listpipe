@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: csnowden, jpatterson, thomallen
+Contributors: csnowden, jpatterson, desireg, thomallen
 Support link: http://listpipe.com/plugin.php
 Tags: listpipe
 Requires at least: 2.8.4
