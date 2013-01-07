@@ -3,7 +3,7 @@ Contributors: csnowden, jpatterson, desireg, thomallen
 Support link: http://listpipe.com/plugin.php
 Tags: listpipe
 Requires at least: 2.8.4
-Tested up to: 2.8.5
+Tested up to: 3.5
 Stable tag: Trunk
 
 The ListPipe Plugin for WordPress pulls Powerful Custom Content from your ListPipe account and inserts it into your posts.
